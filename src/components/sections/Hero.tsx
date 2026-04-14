@@ -79,25 +79,78 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.25 }}
             className="hidden lg:block relative"
           >
-            {/* The Image Container mimicking the Figma reference */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-gray-200 aspect-[4/3] w-full max-w-lg mx-auto bg-gray-900 flex items-center justify-center">
-               <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900" />
+            {/* The Image Container - frame kotak (aspect-square) */}
+            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-gray-200/50 aspect-square w-full max-w-[480px] mx-auto bg-white flex items-center justify-center border-2 border-gray-100">
+               {/* Faint subtle grid background for the frame */}
+               <div className="absolute inset-0 bg-gray-50 opacity-50" style={{ backgroundImage: "radial-gradient(#e5e7eb 1px, transparent 1px)", backgroundSize: "24px 24px" }} />
                
-               {/* Decorative inner elements symbolizing technology */}
-               <div className="absolute inset-0 flex items-center justify-center opacity-40">
-                  <div className="w-64 h-64 border border-gray-600 rounded-full animate-spin-slow absolute" />
-                  <div className="w-48 h-48 border border-gray-500 rounded-full absolute" />
-                  <div className="w-32 h-32 border border-gray-400 rounded-full absolute" />
-                  <div className="w-16 h-16 bg-gray-300 rounded-full absolute blur-xl animate-pulse" />
+               {/* Decorative structural rings */}
+               <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Outer Ring Path */}
+                  <div className="absolute w-[340px] h-[340px] rounded-full border border-gray-200" />
+                  {/* Middle Ring Path */}
+                  <div className="absolute w-[250px] h-[250px] rounded-full border border-gray-200 border-dashed" />
+                  {/* Inner Ring Path */}
+                  <div className="absolute w-[160px] h-[160px] rounded-full border border-gray-200" />
+
+                  {/* Center orb (The Sun/Logo) */}
+                  <div
+                    className="relative w-28 h-28 rounded-full flex items-center justify-center z-10"
+                    style={{
+                      background: "radial-gradient(circle, rgba(37,103,30,0.15) 0%, transparent 100%)",
+                      boxShadow: "0 0 60px rgba(37,103,30,0.15)",
+                    }}
+                  >
+                    <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-[0_0_30px_rgba(37,103,30,0.5)] border-4 border-white">
+                      <span className="text-white text-3xl font-extrabold">T</span>
+                    </div>
+                  </div>
+
+                  {/* ===== PLANETARY ORBITS ===== */}
+                  
+                  {/* Inner Orbit (Node.js) - 20s */}
+                  <div className="absolute w-[160px] h-[160px] pointer-events-none" style={{ animation: "spin 20s linear infinite" }}>
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md border border-gray-100" style={{ animation: "spin 20s linear infinite reverse" }}>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node" className="w-5 h-5 object-contain" />
+                    </div>
+                  </div>
+
+                  {/* Middle Orbit (React, Next.js, Figma) - 30s */}
+                  {[
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                  ].map((src, i) => (
+                    <div key={i} className="absolute w-[250px] h-[250px] pointer-events-none" style={{ animation: `spin 30s linear infinite -${i * 10}s` }}>
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg border border-gray-100" style={{ animation: `spin 30s linear infinite reverse -${i * 10}s` }}>
+                        <img src={src} className="w-6 h-6 object-contain" />
+                      </div>
+                    </div>
+                  ))}
+
+                  {/* Outer Orbit (Laravel, Golang, Python) - 45s */}
+                  {[
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  ].map((src, i) => (
+                    <div key={i} className="absolute w-[340px] h-[340px] pointer-events-none" style={{ animation: `spin 45s linear infinite -${i * 15}s` }}>
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-xl border border-gray-100" style={{ animation: `spin 45s linear infinite reverse -${i * 15}s` }}>
+                        <img src={src} className="w-8 h-8 object-contain" />
+                      </div>
+                    </div>
+                  ))}
                </div>
 
               {/* Ready Tag inside the image area (bottom left) */}
-              <div className="absolute bottom-6 left-0">
-                <div className="flex items-center gap-3 px-5 py-3 bg-gold shadow-lg shadow-gold/30">
-                  <Volume2 size={18} className="text-gray-900" />
+              <div className="absolute bottom-6 left-6 z-20">
+                <div className="flex items-center gap-3 px-5 py-3 bg-gold shadow-lg shadow-gold/20 rounded-2xl border border-white/50 backdrop-blur-sm">
+                  <div className="w-8 h-8 rounded-full bg-white/30 flex items-center justify-center">
+                    <Volume2 size={16} className="text-gray-900" />
+                  </div>
                   <div>
-                    <div className="text-gray-900 font-bold text-sm leading-tight">Siap Bekerja</div>
-                    <div className="text-gray-800 text-xs">Open untuk project baru</div>
+                    <div className="text-gray-900 font-extrabold text-sm leading-tight">Siap Bekerja</div>
+                    <div className="text-gray-800 text-xs font-semibold">Open project baru</div>
                   </div>
                 </div>
               </div>

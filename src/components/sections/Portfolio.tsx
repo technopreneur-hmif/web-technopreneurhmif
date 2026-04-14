@@ -82,12 +82,13 @@ export default function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 + i * 0.1 }}
               className="group rounded-3xl overflow-hidden bg-white shadow-sm border border-gray-100 flex flex-col hover:shadow-xl transition-shadow"
             >
-              {/* Image Area - mimicking the large black boxes in reference */}
-              <div className="relative aspect-[4/3] bg-gray-900 overflow-hidden flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-tr from-gray-800 to-gray-900" />
-                <div className="relative w-24 h-24 bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 shadow-xl backdrop-blur-md">
-                   <span className="text-white/40 font-black text-4xl">{project.title.charAt(0)}</span>
-                </div>
+              {/* Image Area - placeholder */}
+              <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden group-hover:opacity-90 transition-opacity">
+                <img 
+                  src={`https://placehold.co/800x600/111827/ffffff?text=${encodeURIComponent(project.title)}`}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Content */}

@@ -22,6 +22,8 @@ const config: Config = {
       },
       animation: {
         float: "float 6s ease-in-out infinite",
+        "spin-slow": "spin 20s linear infinite",
+        "spin-reverse": "spin 12s linear infinite reverse",
       },
       keyframes: {
         float: {

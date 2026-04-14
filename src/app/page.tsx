@@ -8,7 +8,7 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
 import Portfolio from "@/components/sections/Portfolio";
-import Timeline from "@/components/sections/Timeline";
+import Gallery from "@/components/sections/Gallery";
 import Contact from "@/components/sections/Contact";
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
         <About />
         <Services />
         <Portfolio />
-        <Timeline />
+        <Gallery />
         <Contact />
       </main>
       <Footer />

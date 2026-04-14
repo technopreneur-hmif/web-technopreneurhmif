@@ -30,7 +30,7 @@ const navGroups = [
       { label: "About Kami", href: "#about" },
       { label: "Layanan", href: "#services" },
       { label: "Portofolio", href: "#portfolio" },
-      { label: "Timeline", href: "#timeline" },
+      { label: "Galeri", href: "#gallery" },
     ],
   },
   {
