@@ -24,7 +24,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 mb-8"
             >
               <span className="text-primary text-xs font-bold tracking-wider uppercase">
-                AKADEMIS &amp; INOVATIF - HMIF
+                Divisi Technopreneur - Departemen Keprofesian HMIF
               </span>
             </motion.div>
 

@@ -77,12 +77,14 @@ export default function Navbar() {
 
           {/* CTA & Mobile Toggle */}
           <div className="flex items-center gap-4">
-            <button
-              onClick={() => scrollTo("contact")}
-              className="hidden md:block px-5 py-2.5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-light transition-colors"
+            <a
+              href="https://wa.me/6281953410222"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:block px-5 py-2.5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-light transition-colors text-center"
             >
               Hubungi Kami
-            </button>
+            </a>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="md:hidden p-2 text-gray-700 hover:text-primary transition-colors"
@@ -128,12 +130,14 @@ export default function Navbar() {
         </div>
         
         <div className="mt-auto pt-8 border-t border-gray-100">
-          <button
-            onClick={() => scrollTo("contact")}
-            className="w-full py-3.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-light transition-colors"
+          <a
+            href="https://wa.me/6281953410222"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full block text-center py-3.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-light transition-colors"
           >
             Hubungi Kami
-          </button>
+          </a>
         </div>
       </div>
     </>

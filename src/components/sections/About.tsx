@@ -36,7 +36,7 @@ export default function About() {
                 TENTANG KAMI
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-5">
-                Akademis &amp; Inovatif
+                Technopreneur HMIF
               </h2>
               <p className="text-gray-600 text-base leading-relaxed max-w-lg font-medium">
                 Technopreneur HMIF adalah divisi pengembang perangkat lunak di bawah Himpunan Mahasiswa Informatika. Kami menggabungkan ketelitian akademis dengan kelincahan startup untuk menghasilkan produk digital berkualitas.

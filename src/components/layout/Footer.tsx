@@ -46,19 +46,19 @@ const navGroups = [
   {
     title: "Kontak",
     links: [
-      { label: "Andryano (WA)", href: "https://wa.me/6281234567890" },
-      { label: "Ahmad Ali (WA)", href: "https://wa.me/6289876543210" },
-      { label: "Email Divisi", href: "mailto:technopreneur@hmif.ac.id" },
+      { label: "Andryano (WA)", href: "https://wa.me/6281953410222" },
+      { label: "Ahmad Ali (WA)", href: "https://wa.me/6283182236201" },
+      { label: "Technopreneur HMIF (Email)", href: "https://mail.google.com/mail/?view=cm&fs=1&to=technopreneur.hmif@gmail.com" },
       { label: "Mulai Proyek", href: "#contact" },
     ],
   },
 ];
 
 const socials = [
-  { Icon: IconInstagram, href: "https://instagram.com/technopreneur_hmif", label: "Instagram" },
-  { Icon: IconGithub, href: "https://github.com/technopreneur-hmif", label: "GitHub" },
-  { Icon: IconLinkedin, href: "#", label: "LinkedIn" },
-  { Icon: Mail, href: "mailto:technopreneur@hmif.ac.id", label: "Email" },
+  { Icon: IconInstagram, href: "https://www.instagram.com/hmif.itera/", label: "Instagram" },
+  { Icon: IconGithub, href: "https://github.com/technopreneur-hmif/", label: "GitHub" },
+  { Icon: IconLinkedin, href: "https://www.linkedin.com/company/himpunan-mahasiswa-informatika-itera/", label: "LinkedIn" },
+  { Icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=technopreneur.hmif@gmail.com", label: "Email" },
 ];
 
 export default function Footer() {
@@ -106,6 +106,7 @@ export default function Footer() {
                     <Link
                       href={link.href}
                       className="text-gray-500 hover:text-primary text-sm font-medium transition-colors duration-200"
+                      {...(link.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     >
                       {link.label}
                     </Link>
