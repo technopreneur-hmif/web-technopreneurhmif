@@ -291,7 +291,7 @@ Sebuah fitur atau section dianggap **selesai** jika memenuhi semua kriteria beri
 - [ ] Tidak ada console error di browser
 - [ ] Lighthouse Performance ≥ 90 di mobile
 - [ ] Semua teks menggunakan konten nyata (tidak ada placeholder "Lorem ipsum" di production)
-- [ ] Semua link dan CTA berfungsi dan n mengarah ke tujuan yang benar
+- [ ] Semua link dan CTA berfungsi dan mengarah ke tujuan yang benar
 - [ ] Kode di-commit ke repository dengan pesan commit yang deskriptif
 - [ ] Sudah di-review oleh minimal satu anggota tim lain
 
