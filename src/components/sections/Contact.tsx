@@ -20,7 +20,7 @@ export default function Contact() {
     const msg = encodeURIComponent(
       `Halo Technopreneur HMIF,\n\nNama: ${form.name}\nEmail: ${form.email}\nLayanan: ${form.service}\n\nPesan:\n${form.message}`
     );
-    window.open(`https://wa.me/6281234567890?text=${msg}`, "_blank");
+    window.open(`https://wa.me/6281953410222?text=${msg}`, "_blank");
   };
 
   return (
