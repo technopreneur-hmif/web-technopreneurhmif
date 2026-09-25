@@ -16,17 +16,6 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* ── LEFT ── */}
           <div>
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 mb-8"
-            >
-              <span className="text-primary text-xs font-bold tracking-wider uppercase">
-                Divisi Technopreneur - Departemen Keprofesian HMIF
-              </span>
-            </motion.div>
 
             {/* Heading */}
             <motion.h1
@@ -86,15 +75,34 @@ export default function Hero() {
                
                {/* Decorative structural rings */}
                <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Entrance: planet muncul duluan, ring & orb settle terakhir (total ≤ 1,4s) */}
                   {/* Outer Ring Path */}
-                  <div className="absolute w-[340px] h-[340px] rounded-full border border-gray-200" />
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.85 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, ease: "easeOut", delay: 0.82 }}
+                    className="absolute w-[340px] h-[340px] rounded-full border border-gray-200"
+                  />
                   {/* Middle Ring Path */}
-                  <div className="absolute w-[250px] h-[250px] rounded-full border border-gray-200 border-dashed" />
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.85 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, ease: "easeOut", delay: 0.76 }}
+                    className="absolute w-[250px] h-[250px] rounded-full border border-gray-200 border-dashed"
+                  />
                   {/* Inner Ring Path */}
-                  <div className="absolute w-[160px] h-[160px] rounded-full border border-gray-200" />
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.85 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, ease: "easeOut", delay: 0.7 }}
+                    className="absolute w-[160px] h-[160px] rounded-full border border-gray-200"
+                  />
 
                   {/* Center orb (The Sun/Logo) */}
-                  <div
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.45 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.55, ease: "easeOut", delay: 0.6 }}
                     className="relative w-28 h-28 rounded-full flex items-center justify-center z-10"
                     style={{
                       background: "radial-gradient(circle, rgba(37,103,30,0.15) 0%, transparent 100%)",
@@ -104,14 +112,21 @@ export default function Hero() {
                     <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-[0_0_30px_rgba(37,103,30,0.5)] border-4 border-white">
                       <span className="text-white text-3xl font-extrabold">T</span>
                     </div>
-                  </div>
+                  </motion.div>
 
                   {/* ===== PLANETARY ORBITS ===== */}
                   
                   {/* Inner Orbit (Node.js) - 20s */}
                   <div className="absolute w-[160px] h-[160px] pointer-events-none" style={{ animation: "spin 20s linear infinite" }}>
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md border border-gray-100" style={{ animation: "spin 20s linear infinite reverse" }}>
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node" className="w-5 h-5 object-contain" />
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10" style={{ animation: "spin 20s linear infinite reverse" }}>
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.3, filter: "blur(4px)" }}
+                        animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                        transition={{ duration: 0.5, ease: "easeOut", delay: 0.35 }}
+                        className="w-full h-full bg-white rounded-full flex items-center justify-center shadow-md border border-gray-100"
+                      >
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node" className="w-5 h-5 object-contain" />
+                      </motion.div>
                     </div>
                   </div>
 
@@ -122,8 +137,15 @@ export default function Hero() {
                     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
                   ].map((src, i) => (
                     <div key={i} className="absolute w-[250px] h-[250px] pointer-events-none" style={{ animation: `spin 30s linear infinite -${i * 10}s` }}>
-                      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg border border-gray-100" style={{ animation: `spin 30s linear infinite reverse -${i * 10}s` }}>
-                        <img src={src} className="w-6 h-6 object-contain" />
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12" style={{ animation: `spin 30s linear infinite reverse -${i * 10}s` }}>
+                        <motion.div
+                          initial={{ opacity: 0, scale: 0.3, filter: "blur(4px)" }}
+                          animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                          transition={{ duration: 0.5, ease: "easeOut", delay: 0.41 + i * 0.06 }}
+                          className="w-full h-full bg-white rounded-full flex items-center justify-center shadow-lg border border-gray-100"
+                        >
+                          <img src={src} className="w-6 h-6 object-contain" />
+                        </motion.div>
                       </div>
                     </div>
                   ))}
@@ -135,8 +157,15 @@ export default function Hero() {
                     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
                   ].map((src, i) => (
                     <div key={i} className="absolute w-[340px] h-[340px] pointer-events-none" style={{ animation: `spin 45s linear infinite -${i * 15}s` }}>
-                      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-xl border border-gray-100" style={{ animation: `spin 45s linear infinite reverse -${i * 15}s` }}>
-                        <img src={src} className="w-8 h-8 object-contain" />
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14" style={{ animation: `spin 45s linear infinite reverse -${i * 15}s` }}>
+                        <motion.div
+                          initial={{ opacity: 0, scale: 0.3, filter: "blur(4px)" }}
+                          animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                          transition={{ duration: 0.5, ease: "easeOut", delay: 0.59 + i * 0.06 }}
+                          className="w-full h-full bg-white rounded-full flex items-center justify-center shadow-xl border border-gray-100"
+                        >
+                          <img src={src} className="w-8 h-8 object-contain" />
+                        </motion.div>
                       </div>
                     </div>
                   ))}

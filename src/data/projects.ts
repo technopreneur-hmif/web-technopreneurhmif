@@ -6,60 +6,52 @@ export type Project = {
   category: "web" | "app" | "design";
   liveUrl?: string;
   repoUrl?: string;
+  image?: string;
   featured?: boolean;
 };
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: "SiKasir — Sistem Kasir UMKM",
+    title: "Sistem Management Data Anggota HMIF",
     description:
-      "Aplikasi kasir berbasis web untuk UMKM lokal. Dilengkapi manajemen produk, laporan penjualan harian, dan export PDF.",
-    stack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma"],
+      "Sistem manajemen data anggota himpunan: pendataan, pengelolaan profil, dan administrasi keanggotaan HMIF dalam satu platform terpusat.",
+    stack: ["Laravel", "React", "Tailwind CSS"],
     category: "web",
-    liveUrl: "https://sikasir.demo.com",
+    liveUrl: "https://hmif.girimulyo.com/",
+    image: "/projects/data-anggota-hmif.webp",
     featured: true,
   },
   {
     id: 2,
-    title: "PortalMahasiswa HMIF",
+    title: "Sistem Inventaris HMIF",
     description:
-      "Platform internal mahasiswa HMIF untuk manajemen kegiatan, absensi, dan informasi himpunan secara terpusat.",
-    stack: ["React", "Laravel", "MySQL", "Tailwind CSS"],
+      "Platform inventaris dan peminjaman barang himpunan: katalog aset, pengajuan yang termonitor real-time, tracking penanggung jawab, serta pengembalian dengan verifikasi kondisi barang.",
+    stack: ["Laravel", "Vite", "Tailwind CSS"],
     category: "web",
+    liveUrl: "https://smi.jeremi.my.id/",
+    image: "/projects/inventaris-hmif.webp",
     featured: true,
   },
   {
     id: 3,
-    title: "TrackerVita — Health Monitoring App",
+    title: "Website Official HMIF ITERA",
     description:
-      "Aplikasi mobile pemantau kesehatan harian yang terintegrasi dengan wearable device via Bluetooth BLE.",
-    stack: ["Flutter", "Dart", "Firebase", "BLE SDK"],
-    category: "app",
+      "Website resmi himpunan: profil organisasi, berita dan artikel teknologi, serta panel admin untuk pengelolaan konten himpunan.",
+    stack: ["Laravel", "Inertia.js", "Bootstrap"],
+    category: "web",
+    liveUrl: "https://hmif.if.itera.ac.id/",
     featured: true,
   },
   {
     id: 4,
-    title: "Brand Identity — WarungKu",
+    title: "Website Resmi Desa Batang Hari Ogan",
     description:
-      "Desain identitas visual lengkap untuk startup F&B lokal: logo, color palette, typography, dan panduan brand.",
-    stack: ["Figma", "Adobe Illustrator"],
-    category: "design",
-  },
-  {
-    id: 5,
-    title: "EduPath — LMS Sederhana",
-    description:
-      "Learning Management System ringan untuk institusi pendidikan kecil dengan fitur kelas, tugas, dan nilai.",
-    stack: ["Vue.js", "Node.js", "Express", "MongoDB"],
+      "Website resmi desa: profil dan peta wilayah, artikel berita kegiatan, galeri, layanan mandiri warga, serta panel admin untuk pengelolaan konten desa.",
+    stack: ["OpenSID", "PHP", "Tailwind CSS"],
     category: "web",
-  },
-  {
-    id: 6,
-    title: "AgriScan — Plant Disease Detector",
-    description:
-      "Aplikasi deteksi penyakit tanaman menggunakan kamera smartphone berbasis model ML TensorFlow Lite.",
-    stack: ["React Native", "Python", "TensorFlow Lite", "FastAPI"],
-    category: "app",
+    liveUrl: "https://batanghariogan.com/",
+    image: "/projects/batang-hari-ogan.webp",
+    featured: true,
   },
 ];

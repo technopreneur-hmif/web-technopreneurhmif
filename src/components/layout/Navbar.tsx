@@ -9,7 +9,7 @@ const navLinks = [
   { label: "About", href: "about" },
   { label: "Layanan", href: "services" },
   { label: "Portofolio", href: "portfolio" },
-  { label: "Galeri", href: "gallery" },
+  // { label: "Galeri", href: "gallery" }, // dinonaktifkan sementara
   { label: "Kontak", href: "contact" },
 ];
 
@@ -50,8 +50,16 @@ export default function Navbar() {
           {/* Logo */}
           <button
             onClick={() => scrollTo("home")}
-            className="flex items-center gap-2 group"
+            className="flex items-center gap-3 group"
+            aria-label="Go to home"
           >
+            <span className="flex items-center justify-center text-6xl leading-none rounded-md bg-transparent text-primary translate-y-2 translate-x-4">
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-[1em] h-[1em]">
+                <path d="M12 2.5l1.98 4.01 4.42.64-3.2 3.12.76 4.42L12 13.77l-3.96 2.63.76-4.42L5.6 7.15l4.42-.64L12 2.5z" />
+                <text x="12" y="12.2" textAnchor="middle" dominantBaseline="middle" fontSize="8" fill="white" fontWeight="700">T</text>
+              </svg>
+            </span>
+
             <span className="text-gray-900 font-bold text-lg tracking-tight">
               Techno<span className="text-primary">preneur</span>
             </span>

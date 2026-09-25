@@ -8,7 +8,8 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
 import Portfolio from "@/components/sections/Portfolio";
-import Gallery from "@/components/sections/Gallery";
+// Section Galeri dinonaktifkan sementara — uncomment import & <Gallery /> untuk mengaktifkan kembali
+// import Gallery from "@/components/sections/Gallery";
 import Contact from "@/components/sections/Contact";
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
         <About />
         <Services />
         <Portfolio />
-        <Gallery />
+        {/* <Gallery /> — dinonaktifkan sementara */}
         <Contact />
       </main>
       <Footer />

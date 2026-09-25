@@ -33,7 +33,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-24 bg-[#EBEAEF]" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header & Filter */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12">
           <motion.div
@@ -43,7 +43,7 @@ export default function Portfolio() {
             className="max-w-2xl"
           >
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
-              Karya Terpilih
+              Portfolio HMIF
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed font-medium">
               Lebih dari sekedar desain, kami mewujudkan ide hingga menjadi nyata.
@@ -82,11 +82,12 @@ export default function Portfolio() {
               transition={{ duration: 0.5, delay: 0.1 + i * 0.1 }}
               className="group rounded-3xl overflow-hidden bg-white shadow-sm border border-gray-100 flex flex-col hover:shadow-xl transition-shadow"
             >
-              {/* Image Area - placeholder */}
+              {/* Image Area */}
               <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden group-hover:opacity-90 transition-opacity">
                 <img 
-                  src={`https://placehold.co/800x600/111827/ffffff?text=${encodeURIComponent(project.title)}`}
+                  src={project.image ?? `https://placehold.co/800x600/111827/ffffff?text=${encodeURIComponent(project.title)}`}
                   alt={project.title}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -101,7 +102,7 @@ export default function Portfolio() {
                     {project.category}
                   </span>
                 </div>
-                
+
                 <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-1 font-medium line-clamp-2">
                   {project.description}
                 </p>

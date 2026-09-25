@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Technopreneur HMIF">
+  <title>Technopreneur HMIF</title>
+  <rect width="64" height="64" rx="12" fill="#ffffff"/>
+  <path d="M32.00 5.85L40.07 23.65L59.50 25.82L45.06 39.00L49.00 58.15L32.00 48.49L15.00 58.15L18.94 39.00L4.50 25.82L23.93 23.65Z" fill="#155724"/>
+  <path d="M0 0H100V36H67V100H33V36H0Z"
+        fill="#ffffff"
+        transform="translate(32.00 36.14) scale(0.16958) translate(-50 -50)"/>
+</svg>

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import MotionProvider from "@/components/layout/MotionProvider";
 import "./globals.css";
 
 const inter = Inter({
@@ -9,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Technopreneur HMIF — Kami Bangun Produk Digital yang Bekerja",
+  title: "Technopreneur HMIF",
   description:
     "Divisi Technopreneur HMIF menawarkan layanan pengembangan web, mobile app, dan desain UI/UX berkualitas tinggi untuk UMKM, startup, dan institusi. Mulai dari landing page hingga web app custom.",
   keywords: [
@@ -43,8 +45,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className={`${inter.variable} h-full scroll-smooth`}>
-      <body className="min-h-full flex flex-col antialiased">{children}</body>
+      <body className="min-h-full flex flex-col antialiased">
+        <MotionProvider>{children}</MotionProvider>
+        <Analytics />
+      </body>
     </html>
   );
 }
-
