@@ -24,9 +24,9 @@ export default function Hero() {
               transition={{ duration: 0.65, delay: 0.1 }}
               className="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-gray-900 leading-[1.1] tracking-tight mb-6"
             >
-              KAMI BANGUN<br />
-              Produk Digital<br />
-              <span className="text-primary italic font-serif tracking-normal">yang Bekerja</span>
+              DIGITAL<br />
+              SOLUTIONS<br />
+              <span className="text-primary italic font-serif tracking-normal">By HMIF ITERA TALENTS</span>
             </motion.h1>
 
             {/* Description */}
@@ -36,7 +36,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-gray-600 text-lg leading-relaxed mb-10 max-w-lg font-medium"
             >
-              Solusi pengembangan website dan aplikasi mobile yang dirancang dengan presisi akademis dan eksekusi profesional untuk pertumbuhan bisnis Anda.
+              Solusi pengembangan website dan aplikasi mobile yang dirancang dengan presisi dan eksekusi profesional untuk pertumbuhan bisnis Anda.
             </motion.p>
 
             {/* CTAs */}

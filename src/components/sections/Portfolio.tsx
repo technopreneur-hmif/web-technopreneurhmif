@@ -80,8 +80,18 @@ export default function Portfolio() {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + i * 0.1 }}
-              className="group rounded-3xl overflow-hidden bg-white shadow-sm border border-gray-100 flex flex-col hover:shadow-xl transition-shadow"
+              className="group relative rounded-3xl overflow-hidden bg-white shadow-sm border border-gray-100 flex flex-col hover:shadow-xl transition-shadow"
             >
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Buka website ${project.title}`}
+                  className="absolute inset-0 z-10"
+                />
+              )}
+
               {/* Image Area */}
               <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden group-hover:opacity-90 transition-opacity">
                 <img 
@@ -130,7 +140,7 @@ export default function Portfolio() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-primary text-sm font-bold hover:underline"
+                      className="relative z-20 flex items-center gap-2 text-primary text-sm font-bold hover:underline"
                     >
                       <ExternalLink size={16} /> Live Demo
                     </a>
@@ -140,7 +150,7 @@ export default function Portfolio() {
                       href={project.repoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-400 text-sm font-semibold hover:text-gray-900 transition-colors"
+                      className="relative z-20 flex items-center gap-2 text-gray-400 text-sm font-semibold hover:text-gray-900 transition-colors"
                     >
                       <IconGithub /> Repository
                     </a>

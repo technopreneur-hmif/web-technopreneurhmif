@@ -41,6 +41,7 @@ export const projects: Project[] = [
     stack: ["Laravel", "Inertia.js", "Bootstrap"],
     category: "web",
     liveUrl: "https://hmif.if.itera.ac.id/",
+    image: "/projects/web-hmif.webp",
     featured: true,
   },
   {

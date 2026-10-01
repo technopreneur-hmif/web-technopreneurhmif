@@ -50,9 +50,12 @@ export default function Contact() {
                 <div>
                   <h4 className="text-gray-900 font-bold text-sm">Andryano Shevchenko Limbong</h4>
                   <div className="text-gray-500 text-xs font-medium uppercase tracking-wider mb-1">Ketua Divisi</div>
-                  <div className="flex items-center gap-2 text-gray-600 text-xs font-semibold">
+                  <a
+                    href="tel:+6281953410222"
+                    className="flex items-center gap-2 w-fit text-gray-600 text-xs font-semibold hover:text-primary transition-colors"
+                  >
                     <Phone size={12} /> +62 819 5341 0222
-                  </div>
+                  </a>
                 </div>
               </div>
 
@@ -64,9 +67,12 @@ export default function Contact() {
                 <div>
                   <h4 className="text-gray-900 font-bold text-sm">Ahmad Ali Mukti</h4>
                   <div className="text-gray-500 text-xs font-medium uppercase tracking-wider mb-1">Staff Ahli</div>
-                  <div className="flex items-center gap-2 text-gray-600 text-xs font-semibold">
+                  <a
+                    href="tel:+6283182236201"
+                    className="flex items-center gap-2 w-fit text-gray-600 text-xs font-semibold hover:text-primary transition-colors"
+                  >
                     <Phone size={12} /> +62 831 8223 6201
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
