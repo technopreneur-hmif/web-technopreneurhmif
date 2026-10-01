@@ -121,8 +121,8 @@ export default function Contact() {
                   onChange={(e) => setForm({ ...form, service: e.target.value })}
                 >
                   <option value="" disabled hidden>Pilih layanan yang Anda butuhkan...</option>
-                  <option value="Landing Page">Landing Page (- Rp 2.5 Jt)</option>
-                  <option value="Company Profile">Company Profile (- Rp 5 Jt)</option>
+                  <option value="Landing Page">Landing Page (- Rp 100rb)</option>
+                  <option value="Company Profile">Company Profile (- Rp 500rb)</option>
                   <option value="Web App">Web Application Custom</option>
                   <option value="Lainnya">Lainnya / Konsultasi Dulu</option>
                 </select>

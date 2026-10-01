@@ -12,11 +12,11 @@ const services = [
     name: "Landing Page",
     icon: LayoutTemplate,
     tagline: "Ditujukan untuk satu halaman spesifik dengan tujuan konversi (penjualan/iklan).",
-    price: "500rb",
+    price: "100rb",
     features: [
-      { title: "Paket Ekonomis (Rp 500rb - 1,5jt)", desc: "Menggunakan template siap pakai (WordPress/Elementor), pengerjaan cepat 1-3 hari." },
-      { title: "Standar Profesional (Rp 1,5jt - 4jt)", desc: "Desain lebih rapi, copywriting persuasif, integrasi tracking (Google Ads/FB Pixel), dan responsif." },
-      { title: "Custom/Premium (Rp 4jt+)", desc: "Desain unik dari nol (UI/UX custom) dan optimasi kecepatan loading tingkat tinggi." }
+      { title: "Paket Ekonomis (Rp 100rb - 500rb)", desc: "Menggunakan template siap pakai (WordPress/Elementor), pengerjaan cepat 1-3 hari." },
+      { title: "Standar Profesional (Rp 500rb - 2jt)", desc: "Desain lebih rapi, copywriting persuasif, integrasi tracking (Google Ads/FB Pixel), dan responsif." },
+      { title: "Custom/Premium (Rp 2jt - 7jt)", desc: "Desain unik dari nol (UI/UX custom) dan optimasi kecepatan loading tingkat tinggi." }
     ],
     highlighted: false,
     cta: "Konsultasi Landing Page",
@@ -27,11 +27,11 @@ const services = [
     icon: MonitorSmartphone,
     badge: "PALING TERPOPULER",
     tagline: "Website multi-halaman (Home, About, Services, dll) untuk kredibilitas bisnis.",
-    price: "1.5Jt",
+    price: "500rb",
     features: [
-      { title: "Basic (Rp 1,5jt - 3jt)", desc: "Menggunakan CMS standar seperti WordPress, cocok untuk keperluan UMKM." },
-      { title: "Menengah (Rp 4jt - 10jt)", desc: "Desain custom, SEO dasar, integrasi Google Maps, formulir kontak profesional." },
-      { title: "Enterprise (Rp 15jt - 50jt+)", desc: "Keamanan tinggi, desain eksklusif, multi-bahasa, dan integrasi sistem internal untuk perusahaan besar." }
+      { title: "Basic (Rp 500rb - 2jt)", desc: "Menggunakan CMS standar seperti WordPress, cocok untuk keperluan UMKM." },
+      { title: "Menengah (Rp 2jt - 7jt)", desc: "Desain custom, SEO dasar, integrasi Google Maps, formulir kontak profesional." },
+      { title: "Enterprise (Rp 7jt - 30jt+)", desc: "Keamanan tinggi, desain eksklusif, multi-bahasa, dan integrasi sistem internal untuk perusahaan besar." }
     ],
     highlighted: true,
     cta: "Buat Profil Perusahaan",
@@ -41,11 +41,11 @@ const services = [
     name: "Web Application",
     icon: CopySlash,
     tagline: "Sistem kompleks seperti dashboard admin, database besar, dan interaksi pengguna (HRIS, e-learning).",
-    price: "10Jt",
+    price: "1Jt",
     features: [
-      { title: "Sederhana (Rp 10jt - 35jt)", desc: "Fitur login, manajemen data dasar (CRUD), dan tampilan dashboard sederhana." },
-      { title: "Menengah (Rp 35jt - 150jt)", desc: "Integrasi API (payment, kurir), sistem laporan otomatis, dan multi-user role." },
-      { title: "Kompleks/Enterprise (Rp 200jt+)", desc: "Arsitektur microservices, skalabilitas tinggi, keamanan tingkat lanjut dengan MERN/Laravel." }
+      { title: "Sederhana (Rp 1jt - 10jt)", desc: "Fitur login, manajemen data dasar (CRUD), dan tampilan dashboard sederhana." },
+      { title: "Menengah (Rp 10jt - 50jt)", desc: "Integrasi API (payment, kurir), sistem laporan otomatis, dan multi-user role." },
+      { title: "Kompleks/Enterprise (Rp 50jt - 250jt+)", desc: "Arsitektur microservices, skalabilitas tinggi, keamanan tingkat lanjut dengan MERN/Laravel." }
     ],
     highlighted: false,
     cta: "Bangun Web App",
@@ -55,11 +55,11 @@ const services = [
     name: "UI/UX Design",
     icon: PenTool,
     tagline: "Desain antarmuka mendalam (Figma) dan pengalaman pengguna yang optimal.",
-    price: "500rb",
+    price: "100rb",
     features: [
-      { title: "Basic (Mulai Rp 500rb)", desc: "Wireframe, konsep dasar, dan Low-Fidelity mockup." },
-      { title: "Standard (Mulai Rp 2jt)", desc: "High-Fidelity UI, prototipe interaktif, dan panduan gaya lengkap." },
-      { title: "Premium (Mulai Rp 5jt+)", desc: "Design System komprehensif, ilustrasi custom, dan Usability Testing." }
+      { title: "Basic (Mulai Rp 100rb)", desc: "Wireframe, konsep dasar, dan Low-Fidelity mockup." },
+      { title: "Standard (Mulai Rp 1jt)", desc: "High-Fidelity UI, prototipe interaktif, dan panduan gaya lengkap." },
+      { title: "Premium (Mulai Rp 3jt+)", desc: "Design System komprehensif, ilustrasi custom, dan Usability Testing." }
     ],
     highlighted: false,
     cta: "Konsultasi Desain",
@@ -69,11 +69,11 @@ const services = [
     name: "Pengembangan Hardware",
     icon: Cpu,
     tagline: "Pengembangan perangkat keras cerdas, sistem otomasi terintegrasi, dan solusi IoT.",
-    price: "3Jt",
+    price: "1Jt",
     features: [
-      { title: "Basic (Mulai Rp 3jt - 10jt)", desc: "Purwarupa mikrokontroler skala kecil (Arduino/ESP32) untuk otomasi sederhana." },
-      { title: "Menengah (Rp 10jt - 50jt)", desc: "Integrasi berbagai sensor industri, aktuator, dan dashboard pemantauan realtime." },
-      { title: "Enterprise (Rp 100jt+)", desc: "Desain & manufaktur PCB custom untuk skalabilitas dan produksi massal (IoT tingkat lanjut)." }
+      { title: "Basic (Mulai Rp 1jt - 5jt)", desc: "Purwarupa mikrokontroler skala kecil (Arduino/ESP32) untuk otomasi sederhana." },
+      { title: "Menengah (Rp 5jt - 30jt)", desc: "Integrasi berbagai sensor industri, aktuator, dan dashboard pemantauan realtime." },
+      { title: "Enterprise (Rp 30jt - 150jt+)", desc: "Desain & manufaktur PCB custom untuk skalabilitas dan produksi massal (IoT tingkat lanjut)." }
     ],
     highlighted: false,
     cta: "Diskusikan Hardware",
